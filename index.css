@@ -32,6 +32,7 @@ height: 100vh;
     width: 40%;
     height: 30%;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .card:hover .card-content {
