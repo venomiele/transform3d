@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {   
+background: url("https://cdn.pixabay.com/photo/2016/09/08/20/52/stars-1655504_960_720.jpg");
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 100vh;
+}
+
+.page-title {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    border: 2px solid white;
+    border-radius: 7px;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    user-select: none;
+}
+
+
+.card {
+    text-align: center;
+    width: 40%;
+    height: 30%;
+    border-radius: 10px;
+}
+
+.card:hover .card-content {
+transform: rotateY(.5turn);
+}
+
+.card-content {
+    position: relative;
+    transition: transform 2s linear;
+    transform-style: preserve-3d;
+    padding: 8rem;
+    color: white;
+    box-shadow: 5px 5px 15px black;
+    text-shadow: 3px 3px black;
+}
+
+.card-back,
+.card-front {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform-style: preserve-3d;
+    border-radius: 9px;
+    padding: 5rem;
+    border: 2px solid white;
+}
+
+.card-back {
+    background: url("https://c.tenor.com/TxRSKuLkZs0AAAAM/boston-city.gif");
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: -1;
+    transform:rotateY(.5turn);
+}
+.card-front {
+background: url("https://c.tenor.com/J0WGa0wNFE0AAAAC/path-woods.gif");
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+.card-title {
+    transform: translateZ(200px);
+    font-size: 2.5rem;
+}
+
+.description {
+    transform: translateZ(200px);
+    font-size: 2rem;
+}
+
+.subtitle {
+    transform: translateZ(100px);
+    font-size: 1.75rem;
+}
