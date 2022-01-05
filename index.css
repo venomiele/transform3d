@@ -59,6 +59,7 @@ transform: rotateY(.5turn);
     border-radius: 9px;
     padding: 5rem;
     border: 2px solid white;
+    cursor: pointer;
 }
 
 .card-back {
